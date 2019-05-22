@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // URI is how the server is connected
-const uri = 'mongodb+srv://zahin_43:zahin_4321@cluster0-re3uw.gcp.mongodb.net/test?retryWrites=true'
+const uri = 'mongodb+srv://zahin_43:<password>@cluster0-re3uw.gcp.mongodb.net/test?retryWrites=true'
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true});
 
 const connection = mongoose.connection;
