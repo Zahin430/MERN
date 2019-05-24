@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const exercisesRouter = require('./routes/exercises');
@@ -12,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 // Used to send json with our form
-app.use(bodyParser.json());
+app.use(express.json());
 
 // URI is how the server is connected
 const uri = 'mongodb+srv://zahin_43:zahin_4321@cluster0-re3uw.gcp.mongodb.net/test?retryWrites=true'
